@@ -46,7 +46,7 @@ This is a personal blogging website that allows the admin to write blogs and all
 
 To start using this project use the following commands:
 
--git clone https://github.com/MaryannGitonga/blog_app.git
+-git clone https://github.com/swanapole/swanapole_blog.git
 -cd Blog
 -atom .
 -code . (this is if Visual Studio Code is your preferred text editor)
