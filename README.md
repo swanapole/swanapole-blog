@@ -60,3 +60,12 @@ access the application on this localhost address http://127.0.0.1:5000
 ## MUST REQUIREMENTS
 
  You need the following to work on the project: -Python version 3.6 -Flask -Pip -virtualenv -A text Editor
+
+## LINK TO LIVE WEBSITE
+
+
+## TECHNOLOGIES USED
+
+Python
+Flask micro-framework
+Bootstrap
