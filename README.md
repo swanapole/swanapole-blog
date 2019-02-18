@@ -41,3 +41,18 @@ The program should navigate to readers' side when logout is clicked on the navig
 Input Example: Click on Logout on the navigation bar
 
 Output Example: Redirected to the blog readers' side of the website
+
+## SETUP INSTALLATION
+
+To start using this project use the following commands:
+
+git clone https://github.com/MaryannGitonga/blog_app.git
+cd Blog
+atom .
+code . (this is if Visual Studio Code is your preferred text editor)
+To run this program
+
+run this command lines in your terminal:
+chmod a+x start.sh
+./start.sh
+access the application on this localhost address http://127.0.0.1:5000
