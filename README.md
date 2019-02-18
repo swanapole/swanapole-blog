@@ -47,22 +47,31 @@ This is a personal blogging website that allows the admin to write blogs and all
 To start using this project use the following commands:
 
 -git clone https://github.com/swanapole/swanapole_blog.git
+
 -cd Blog
+
 -atom .
+
 -code . (this is if Visual Studio Code is your preferred text editor)
 
 To run this program
 
 -run this command lines in your terminal:
+
 -chmod a+x start.sh
+
 -./start.sh
+
 -access the application on this localhost address http://127.0.0.1:5000
 
 ## MUST REQUIREMENTS
 
  You need the following to work on the project:
+
  -Python version 3.6
+
   -Flask -Pip -virtualenv
+
   -A text Editor
 
 ## LINK TO LIVE WEBSITE
@@ -71,7 +80,9 @@ To run this program
 ## TECHNOLOGIES USED
 
 -Python
+
 -Flask micro-framework
+
 -Bootstrap
 
 ## LICENCE
