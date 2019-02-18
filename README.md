@@ -56,3 +56,7 @@ run this command lines in your terminal:
 chmod a+x start.sh
 ./start.sh
 access the application on this localhost address http://127.0.0.1:5000
+
+## MUST REQUIREMENTS
+
+ You need the following to work on the project: -Python version 3.6 -Flask -Pip -virtualenv -A text Editor
