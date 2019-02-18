@@ -46,35 +46,39 @@ This is a personal blogging website that allows the admin to write blogs and all
 
 To start using this project use the following commands:
 
-git clone https://github.com/MaryannGitonga/blog_app.git
-cd Blog
-atom .
-code . (this is if Visual Studio Code is your preferred text editor)
+-git clone https://github.com/MaryannGitonga/blog_app.git
+-cd Blog
+-atom .
+-code . (this is if Visual Studio Code is your preferred text editor)
+
 To run this program
 
-run this command lines in your terminal:
-chmod a+x start.sh
-./start.sh
-access the application on this localhost address http://127.0.0.1:5000
+-run this command lines in your terminal:
+-chmod a+x start.sh
+-./start.sh
+-access the application on this localhost address http://127.0.0.1:5000
 
 ## MUST REQUIREMENTS
 
- You need the following to work on the project: -Python version 3.6 -Flask -Pip -virtualenv -A text Editor
+ You need the following to work on the project:
+ -Python version 3.6
+  -Flask -Pip -virtualenv
+  -A text Editor
 
 ## LINK TO LIVE WEBSITE
 
 
 ## TECHNOLOGIES USED
 
-Python
-Flask micro-framework
-Bootstrap
+-Python
+-Flask micro-framework
+-Bootstrap
 
 ## LICENCE
 
 MIT License
 
-Copyright (c) 2018 SHILLA SWANAPOLE
+Copyright (c) 2019 SHILLA SWANAPOLE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sub-license, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
