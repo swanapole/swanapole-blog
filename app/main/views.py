@@ -42,7 +42,7 @@ def health():
 def technology():
     blogs = Blog.get_blogs('technology')
 
-    return render_template('Technology.html',blogs = blogs)
+    return render_template('technology.html',blogs = blogs)
 
 
 @main.route('/user/<uname>')

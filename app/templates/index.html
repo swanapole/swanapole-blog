@@ -5,20 +5,21 @@
 {%block styles%}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
 {%endblock%}
 <!-- Content block -->
 {%block content%}
-<div class="jumbotron text-center" style="background-color:blue; color: #000; margin: 10px -100px 30px -100px;">
+<div class="jumbotron text-center" style="background-color:blue; color: #000; margin: 10px -100px 30px -100px;font-family: 'Felipa', cursive;">
   <h1>BLOG Ma Intrests!!!!!</h1>
 </div>
 <div class="row">
   <div class="col-md-6">
     <div class="well">
-      <h3 class="text-center">Health</h3>
+      <h3 class="text-center" style="font-family: 'Felipa', cursive;">Health</h3>
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <a href="/blogs/cuisine" class="btn btn-lg" style="background-color:#fca3b7;color:#000;">View Blogs</a>
+          <a href="/blogs/health" class="btn btn-lg" style="background-color:#blue;color:#000;font-family: 'Felipa', cursive;">View Blogs</a>
         </div>
         <div class="col-md-4"></div>
       </div>
@@ -26,11 +27,11 @@
 </div>
 <div class="col-md-6">
  <div class="well">
-   <h3 class="text-center">Tecnology</h3>
+   <h3 class="text-center" style="font-family: 'Felipa', cursive;">Tecnology</h3>
    <div class="row">
      <div class="col-md-4"></div>
      <div class="col-md-4">
-       <a href="/blogs/health" class="btn btn-lg" style="background-color:#fca3b7;color:#000;">View Blogs</a>
+       <a href="/blogs/technology" class="btn btn-lg" style="background-color:#blue;color:#000;font-family: 'Felipa', cursive;">View Blogs</a>
      </div>
      <div class="col-md-4"></div>
    </div>
@@ -38,11 +39,11 @@
 </div>
 <div class="col-md-6">
  <div class="well">
-   <h3 class="text-center">Adventures</h3>
+   <h3 class="text-center" style="font-family: 'Felipa', cursive;" > Adventures</h3>
    <div class="row">
      <div class="col-md-4"></div>
      <div class="col-md-4">
-       <a href="/blogs/empower" class="btn btn-lg" style="background-color:#fca3b7;color:#000;">View Blogs</a>
+       <a href="/blogs/adventures" class="btn btn-lg" style="background-color:blue;color:#000;font-family: 'Felipa', cursive;">View Blogs</a>
      </div>
      <div class="col-md-4"></div>
    </div>
@@ -50,11 +51,11 @@
 </div>
 <div class="col-md-6">
  <div class="well">
-   <h3 class="text-center">Cuisine</h3>
+   <h3 class="text-center" style="font-family: 'Felipa', cursive;">Cuisine</h3>
    <div class="row">
      <div class="col-md-4"></div>
      <div class="col-md-4">
-       <a href="/blogs/empower" class="btn btn-lg" style="background-color:#fca3b7;color:#000;">View Blogs</a>
+       <a href="/blogs/cuisine" class="btn btn-lg" style="background-color:#blue;color:#000;font-family: 'Felipa', cursive;">View Blogs</a>
      </div>
      <div class="col-md-4"></div>
    </div>
