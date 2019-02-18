@@ -24,7 +24,7 @@ def login():
             return redirect(request.args.get('next') or url_for('main.index'))
             flash('Invalid author or password')
 
-    title = 'Blog Login'g
+    title = 'Blog Login'
     return render_template('auth/login.html', title = title, login_form = form)
 
 
