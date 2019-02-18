@@ -69,3 +69,9 @@ access the application on this localhost address http://127.0.0.1:5000
 Python
 Flask micro-framework
 Bootstrap
+
+## LICENCE
+
+MIT License
+
+Copyright (c) 2018 SHILLA SWANAPOLE
