@@ -1,4 +1,4 @@
-<div style="background-color: #fff; color: #fca3b7;" class="navbar" role="navigation" style="margin-bottom:0; border-bottom: 1px solid">
+<div style="background-color: blue; color: #black;" class="navbar" role="navigation" style="margin-bottom:0; border-bottom: 1px solid">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -14,10 +14,10 @@
         {% if current_user.is_authenticated %}
         <li><a href="/" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Home</a></li>
         {% else %}
-        <li><a href="{{url_for('main.cuisine')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#black'">Cuisine Discoveries</a></li>
-        <li><a href="{{url_for('main.adventures')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Amazing Adventures</a></li>
-        <li><a href="{{url_for('main.health')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Healthy Lifestyle</a></li>
-        <li><a href="{{url_for('main.technology')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Technology</a></li>
+        <li><a href="{{url_for('main.cuisine')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='black'">Cuisine Discoveries</a></li>
+        <li><a href="{{url_for('main.adventures')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='black'">Amazing Adventures</a></li>
+        <li><a href="{{url_for('main.health')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color=black">Healthy Lifestyle</a></li>
+        <li><a href="{{url_for('main.technology')}}" style="color: black;" onmouseover="this.style.color='#000'" onmouseout="this.style.color=black">Technology</a></li>
 
         {% endif %}
 
