@@ -8,8 +8,8 @@ from ..email import mail_message
 
 user = [
     {
-        'email':'admin@blog.com',
-        'password':'admin098'
+        'email':'swanapoleshill@gmail.com',
+        'password':'platinumz@shilla'
     }
 ]
 
@@ -19,7 +19,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email = form.email.data).first()
-        if form.email.data == 'admin@blog.com' and form.password.data == 'admin098':
+        if form.email.data == 'swanapoleshilla@gmail.com' and form.password.data == 'platinumz@shilla':
             login_user(user,form.remember.data)
             return redirect(request.args.get('next') or url_for('main.index'))
             flash('Invalid author or password')

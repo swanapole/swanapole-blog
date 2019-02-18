@@ -166,9 +166,9 @@ def subscriber():
         db.session.add(subscriber)
         db.session.commit()
 
-        mail_message("Welcome to BumbleBee","email/welcome_subscriber",subscriber.email,subscriber=subscriber)
+        mail_message("Welcome to Blog ma intrests","email/welcome_subscriber",subscriber.email,subscriber=subscriber)
 
-        title= "BumbleBee"
+        title= "Blog ma post"
         return render_template('index.html',title=title, blogs=blogs)
 
     subscriber = Blog.query.all()
