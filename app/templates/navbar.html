@@ -15,8 +15,10 @@
         <li><a href="/" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Home</a></li>
         {% else %}
         <li><a href="{{url_for('main.cuisine')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Cuisine Discoveries</a></li>
-        <li><a href="{{url_for('main.voyage')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Amazing Adventures</a></li>
-        <li><a href="{{url_for('main.health')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Experiences</a></li>
+        <li><a href="{{url_for('main.adventures')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Amazing Adventures</a></li>
+        <li><a href="{{url_for('main.health')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Healthy Lifestyle</a></li>
+        <li><a href="{{url_for('main.technology')}}" style="color: #fca3b7;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#fca3b7'">Technology</a></li>
+
         {% endif %}
 
       <ul class="nav navbar-nav navbar-right">

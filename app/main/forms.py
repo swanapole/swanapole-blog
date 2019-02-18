@@ -1,26 +1,23 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,PasswordField,BooleanField,SubmitField
-from wtforms.validators import Required,Email,EqualTo,Length
-from ..models import User
-from wtforms import ValidationError
+from wtforms import StringField,TextAreaField,SubmitField,SelectField
+from wtforms.validators import Required, Email, Length
 
+class BlogForm(FlaskForm):
+    title = StringField('Title', validators = [Required()])
+    text = TextAreaField('Blog',validators = [Required()])
+    category = SelectField('Category', choices = [('cuisine', 'Cuisine'),('adventures','Adventures'), ('health','Health'),('technology','Technology')], validators = [Required()])
+    submit = SubmitField('Post')
 
-class RegistrationForm(FlaskForm):
-    username = StringField('Username', validators = [Required(), Length(min = 3, max =20)])
-    email = StringField('Email Address', validators = [Required(), Email()])
-    password = PasswordField('Password', validators = [Required(),EqualTo('password_confirm', message = 'Passwords must match!')])
-    password_confirm = PasswordField('Confirm Password', validators = [Required()])
-    submit = SubmitField('Sign Up')
+class UpdateProfile(FlaskForm):
+    bio = TextAreaField('Update Bio', validators = [Required()])
+    submit = SubmitField('Submit')
 
-    def validate_email(self,data_field):
-        if User.query.filter_by(email = data_field.data).first():
-            raise ValidationError('An account with that email already exists')
+class CommentForm(FlaskForm):
+    name = StringField('Your name', validators = [Required(), Length(min = 3, max = 20)])
+    text = TextAreaField('Leave a Comment',validators = [Required()])
+    submit = SubmitField('Add Comment')
 
-    def validate_username(self,data_field):
-        if User.query.filter_by(username = data_field.data).first():
-            raise ValidationError('That username is already taken')
-class LoginForm(FlaskForm):
-    email = StringField('Your Email Address',validators=[Required(),Email()])
-    password = PasswordField('Password',validators =[Required()])
-    remember = BooleanField('Remember me')
-    submit = SubmitField('Login')
+class SubscriberForm(FlaskForm):
+    name  = StringField('Your name', validators = [Required()])
+    email = StringField('Your email address', validators = [Required(), Email()])
+    submit = SubmitField('Subscribe')
