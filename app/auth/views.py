@@ -24,7 +24,7 @@ def login():
             return redirect(request.args.get('next') or url_for('main.index'))
             flash('Invalid author or password')
 
-    title = 'BumbleBee Login'
+    title = 'Blog Login'g
     return render_template('auth/login.html', title = title, login_form = form)
 
 
@@ -46,4 +46,3 @@ def register():
         return redirect(url_for('auth.login'))
         title = 'New Account'
     return render_template('auth/register.html', registration_form = form)
-    
